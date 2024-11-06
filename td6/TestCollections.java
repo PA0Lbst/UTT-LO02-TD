@@ -1,4 +1,4 @@
-package tdCollections;
+package bataille.fr.utt.lo2.td6;
 
 import java.util.*;
 

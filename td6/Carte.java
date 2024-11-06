@@ -1,4 +1,4 @@
-package bataille.fr.utt.lo2;
+package bataille.fr.utt.lo2.td6;
 
 public class Carte implements Comparable<Carte> {  // Implémentation de Comparable
     private Couleur couleur;

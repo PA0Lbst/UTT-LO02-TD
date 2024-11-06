@@ -1,4 +1,4 @@
-package bataille.fr.utt.lo2;
+package bataille.fr.utt.lo2.td6;
 
 import java.util.LinkedList;
 import java.util.Queue;

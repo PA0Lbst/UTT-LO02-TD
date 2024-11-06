@@ -1,4 +1,4 @@
-package bataille.fr.utt.lo2;
+package bataille.fr.utt.lo2.td6;
 
 public class Partie {
     private Joueur joueur1;

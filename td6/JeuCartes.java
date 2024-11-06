@@ -1,28 +1,34 @@
-package bataille.fr.utt.lo2.td6;
+package td6;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class JeuCartes {
-    private List<Carte> cartes;
+    private Queue<Carte> cartes;
 
     public JeuCartes() {
-        cartes = new ArrayList<>();
-        // Création des 32 cartes du jeu avec toutes les combinaisons de couleur et de valeur
+        cartes = new LinkedList<>();
         for (Couleur couleur : Couleur.values()) {
             for (Valeur valeur : Valeur.values()) {
-                cartes.add(new Carte(valeur, couleur));
+                cartes.add(new Carte(couleur, valeur));
             }
         }
-        Collections.shuffle(cartes); // Mélange des cartes
+        melanger();
     }
 
-    public Carte tirerCarte() {
-        return cartes.isEmpty() ? null : cartes.remove(0); // Tire la première carte du paquet
+    public void melanger() {
+        ArrayList<Carte> listCartes = new ArrayList<>(cartes);
+        Collections.shuffle(listCartes);
+        cartes = new LinkedList<>(listCartes);
+    }
+
+    public Carte distribuerCarte() {
+        return cartes.poll();
     }
 
     public boolean estVide() {
-        return cartes.isEmpty(); // Vérifie si le paquet est vide
+        return cartes.isEmpty();
     }
 }

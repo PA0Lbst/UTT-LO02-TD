@@ -1,4 +1,4 @@
-package bataille.fr.utt.lo2.td6;
+package td6;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -13,27 +13,22 @@ public class Joueur {
     }
 
     public void ajouterCarte(Carte carte) {
-        main.add(carte); // Ajoute une carte dans la main du joueur
+        main.add(carte);
     }
 
     public Carte jouerCarte() {
-        return main.poll(); // Joue la première carte de la main
-    }
-
-    public int nombreDeCartes() {
-        return main.size(); // Retourne le nombre de cartes dans la main
+        return main.poll();
     }
 
     public boolean aDesCartes() {
-        return !main.isEmpty(); // Vérifie si le joueur a encore des cartes
+        return !main.isEmpty();
     }
 
     public String getNom() {
-        return nom; // Retourne le nom du joueur
+        return nom;
     }
 
-    @Override
-    public String toString() {
-        return nom + " a " + nombreDeCartes() + " cartes.";
+    public int nombreDeCartes() {
+        return main.size();
     }
 }

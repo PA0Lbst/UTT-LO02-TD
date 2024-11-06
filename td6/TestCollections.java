@@ -1,4 +1,4 @@
-package bataille.fr.utt.lo2.td6;
+package td6;
 
 import java.util.*;
 

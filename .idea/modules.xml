@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/UTT-LO02-TD.iml" filepath="$PROJECT_DIR$/.idea/UTT-LO02-TD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/td7/td7.iml" filepath="$PROJECT_DIR$/td7/td7.iml" />
+    </modules>
+  </component>
+</project>
